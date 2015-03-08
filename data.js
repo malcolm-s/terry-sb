@@ -1,8 +1,9 @@
-var data = {
-	"soundclips" : [
-		{
-			"name" : "Oh My God 1",
-			"file" : "Oh My God 1.mp3"
-		}
-	]
-}
+var items = [
+	{
+		id: "leave-it",
+		text: "Leave it!",
+		src: "test"
+	}
+];
+
+exports.items = items;

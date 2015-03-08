@@ -1,0 +1,8 @@
+html
+	head
+		title!= title
+	body
+		header!= message
+		section.soundboard
+			each item in items
+				.soundboard-item(data-id="#{item.id}", data-src="#{item.src}")= item.text
