@@ -5,7 +5,7 @@ var app 	= express();
 
 // config
 
-app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // views
 app.set("views", "./views");
@@ -21,6 +21,6 @@ app.get("/", function (req, res) {
 var server = app.listen(3001, function () {
 	var host = server.address().address;
 	var port = server.address().port;
-	// console.log(path.join(__dirname, "assets"));
+
 	console.log("App listening at http://%s:%s", host, port);
 });
