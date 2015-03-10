@@ -1,6 +1,6 @@
 var express	= require("express");
 var path	= require("path");
-var data 	= require("./data.js");
+var data 	= require("./src/data.js");
 var app 	= express();
 
 // config
