@@ -1,0 +1,30 @@
+{
+  "name": "terry-sb",
+  "version": "0.0.0",
+  "description": "Soundboard",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wristuzi/terry-sb.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/wristuzi/terry-sb/issues"
+  },
+  "dependencies": {
+    "express": "~4.12.2",
+    "jade": "~1.9.2"
+  },
+  "devDependencies": {
+    "browserify": "~9.0.3",
+    "live-reload": "~1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:js": "browserify src/main.js > public/js/bundle.js",
+    "build": "npm run build:js",
+    "build:watch": "nodemon --exec npm run build",
+    "live-reload": "live-reload --port 9091 public/"
+  }
+}
