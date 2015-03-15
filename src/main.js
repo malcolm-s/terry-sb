@@ -1,3 +1,5 @@
+var $ = require("jquery");
+
 function main () {
 	// handler to verify load
 	//	createjs.Sound.addEventListener("fileload", function (event) {
@@ -9,6 +11,8 @@ function main () {
 
 	// bind click to play sounds
 	bindSoundboardItemClicks();
+
+	
 };
 
 function preloadSoundboardSounds () {
