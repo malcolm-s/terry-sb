@@ -4,5 +4,15 @@
 
 .soundboard-item {
 	display: inline-block;
-	padding: 1em;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 5%;
+
+	.responsive(@bp-med, {
+		width: 25%;
+	});
+
+	.responsive(@bp-large, {
+		width: 10%;
+	});
 }
