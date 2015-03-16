@@ -1,0 +1,20 @@
+// breakpoints
+@bp-small: 24em;
+@bp-med: 46.8em;
+@bp-large: 73em;
+
+// sizes
+@fontSizeBase: 20px;
+@fontSizeH1: 5rem;
+// colours
+@backgroundColour: #111111;
+@navy: #001f3f;
+@fontColour: #eeeeee;
+
+// mixins
+
+.responsive(@maxWidth, @content) {
+	@media only screen and (min-width: @maxWidth) {
+		@content();
+	}
+}
