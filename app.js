@@ -13,6 +13,10 @@ app.set("view engine", "jade");
 
 // routing
 app.get("/", function (req, res) {
+	res.redirect("/bollocks");
+})
+
+app.get("/bollocks", function (req, res) {
 	res.render("index", {
 		soundboardItems: data.soundboardItems
 	});

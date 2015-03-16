@@ -10,11 +10,11 @@
 @backgroundColour: #111111;
 @navy: #001f3f;
 @fontColour: #eeeeee;
+@footerColour: #aaaaaa;
 
 // mixins
-
-.responsive(@maxWidth, @content) {
-	@media only screen and (min-width: @maxWidth) {
+.responsive(@minWidth, @content) {
+	@media screen and (min-width: @minWidth) {
 		@content();
 	}
 }
