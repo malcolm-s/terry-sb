@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 20px;
+  color: #eeeeee;
+}
+body {
+  background-color: #111111;
+}
+h1 {
+  font-size: 5rem;
+}
+header {
+  margin-bottom: 2em;
+}
+header h1,
+header p {
+  text-align: center;
+}
+footer {
+  padding: 1em 0;
+  text-align: center;
+  clear: both;
+  background-color: #aaaaaa;
+}
+.soundboard {
+  padding: 0 0.5em;
+}
+.soundboard-item {
+  padding: 1%;
+  min-width: 130px;
+  width: 31%;
+  height: 5em;
+  text-align: center;
+  display: inline-block;
+}
+@media screen and (min-width: 46.8em) {
+  .soundboard-item {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 73em) {
+  .soundboard-item {
+    width: 12%;
+  }
+}
+.soundboard-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -19,5 +19,3 @@ build/Release
 node_modules
 
 # Generated files
-public/css
-public/js
