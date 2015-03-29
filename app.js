@@ -3,6 +3,9 @@ var path	= require("path");
 var data 	= require("./src/data.js");
 var app 	= express();
 
+// app environment
+var isDev = process.env.NODE_ENV === "dev";
+
 // config
 app.set("port", (process.env.PORT || 5000));
 app.use(express.static(path.join(__dirname, "public")));
@@ -18,7 +21,8 @@ app.get("/", function (req, res) {
 
 app.get("/bollocks", function (req, res) {
 	res.render("index", {
-		soundboardItems: data.soundboardItems
+		soundboardItems: data.soundboardItems,
+		isDev: isDev
 	});
 });
 
