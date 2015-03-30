@@ -1,10 +1,11 @@
 extends ./layout.jade
 
 block header
-	h1 Peckham Legend, Man About Canavan's
-	p Terry Council Bollocks: the phrase machine.
+	img.banner-image(src="/images/header1.png")
+	h1.banner-header Peckham Legend, Man About Canavan's
+	p.banner-subtitle Terry Council Bollocks: the phrase machine.
 
 block main
 	.soundboard
 		each item in soundboardItems
-			.soundboard-item(data-id="#{item.id}", data-src="audio/#{item.src}")= item.text
+			.soundboard-item(data-id="#{item.src}", data-src="audio/#{item.src}")= item.text

@@ -1,6 +1,6 @@
 var express	= require("express");
 var path	= require("path");
-var data 	= require("./src/data.js");
+var data 	= require("./audio-utils").read();
 var app 	= express();
 
 // app environment
@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 app.get("/bollocks", function (req, res) {
 	res.render("index", {
-		soundboardItems: data.soundboardItems,
+		soundboardItems: data,
 		isDev: isDev
 	});
 });

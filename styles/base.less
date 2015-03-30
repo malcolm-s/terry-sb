@@ -17,16 +17,23 @@ h1 {
 	font-size: @fontSizeH1;
 }
 
-header {
-	margin-bottom: 2em;
-	background-size: cover;
-	background-image:url("../public/images/header-image.jpg");
-	h1 {
-		font-size: 3rem;
+.banner {
+	text-align: center;
+	padding: 1em 0;
+	border-bottom: 1px solid @footerColour;
+	margin-bottom: 1em;
+
+	.banner-image {
+		width: 15em;
+
 	}
 
-	h1, p {
-		text-align: center;
+	.banner-header {
+		margin-bottom: 0.25em;
+	}
+
+	.banner-header, .banner-subtitle {
+		margin: 0 0.5em;
 	}
 }
 
@@ -34,9 +41,11 @@ header {
 	
 }
 
-footer {
+.footer {
+	margin-top: 1em;
 	padding: 1em 0;
 	text-align: center;
 	clear: both;
-	background-color: @footerColour;
+	background-color: #696969;
+	color: @backgroundColour;
 }

@@ -11,25 +11,31 @@ body {
   background-color: #111111;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 2rem;
 }
-header {
-  margin-bottom: 2em;
-  background-size: cover;
-  background-image: url("../public/images/header-image.jpg");
-}
-header h1 {
-  font-size: 3rem;
-}
-header h1,
-header p {
+.banner {
   text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 1em;
 }
-footer {
+.banner .banner-image {
+  width: 15em;
+}
+.banner .banner-header {
+  margin-bottom: 0.25em;
+}
+.banner .banner-header,
+.banner .banner-subtitle {
+  margin: 0 0.5em;
+}
+.footer {
+  margin-top: 1em;
   padding: 1em 0;
   text-align: center;
   clear: both;
-  background-color: #aaaaaa;
+  background-color: #696969;
+  color: #111111;
 }
 .soundboard {
   padding: 0 0.5em;
@@ -38,8 +44,14 @@ footer {
 }
 .soundboard-item {
   width: 50%;
-  padding-bottom: 1em;
+  padding: 0.25em;
   text-align: center;
+}
+@media screen and (min-width: 24em) {
+  .soundboard-item {
+    width: 33%;
+    padding: 0.5em;
+  }
 }
 .soundboard-item:hover {
   text-decoration: underline;

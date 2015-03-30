@@ -6,10 +6,13 @@
 
 .soundboard-item {
 	width: 50%;
-	padding-bottom: 1em;
+	padding: 0.25em;
 	text-align: center;
 
-	.responsive(@bp-med, {
+
+	.responsive(@bp-small, {
+		width: 33%;
+		padding: 0.5em;
 	});
 
 	.responsive(@bp-large, {
@@ -18,5 +21,6 @@
 	&:hover {
 		text-decoration: underline;
 		cursor: pointer;
+		//border-color: #7FDBFF;
 	}
 }
