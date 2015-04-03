@@ -19,26 +19,32 @@ h1 {
 
 .banner {
 	text-align: center;
-	padding: 1em 0;
-	border-bottom: 1px solid @footerColour;
-	margin-bottom: 1em;
-
+	margin-top: 1em;
+	
 	.banner-image {
 		width: 15em;
-
 	}
 
 	.banner-header {
-		margin-bottom: 0.25em;
-	}
+		margin-top: 1em;
+		background: @contrastBackgroundColour;
+		color: @contrastFontColour;
+		padding: 0.5em;
+		border-bottom: 0.5em solid;
+		border-top: 0.5em solid;
+		border-color: @canavansGreen;
 
-	.banner-header, .banner-subtitle {
-		margin: 0 0.5em;
+		.banner-title {
+
+		}
+		.banner-subtitle {
+
+		}
 	}
 }
 
 .main {	
-	
+	margin-top: 1em;
 }
 
 .footer {
@@ -46,6 +52,7 @@ h1 {
 	padding: 1em 0;
 	text-align: center;
 	clear: both;
-	background-color: #696969;
-	color: @backgroundColour;
+	background-color: @contrastBackgroundColour;
+	color: @contrastFontColour;
+	border-top: 0.5em solid @canavansGreen;
 }

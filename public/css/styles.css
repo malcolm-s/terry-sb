@@ -5,37 +5,41 @@
 }
 html {
   font-size: 20px;
-  color: #eeeeee;
+  color: #111111;
 }
 body {
-  background-color: #111111;
+  background-color: #ffffff;
 }
 h1 {
   font-size: 2rem;
 }
 .banner {
   text-align: center;
-  padding: 1em 0;
-  border-bottom: 1px solid #aaaaaa;
-  margin-bottom: 1em;
+  margin-top: 1em;
 }
 .banner .banner-image {
   width: 15em;
 }
 .banner .banner-header {
-  margin-bottom: 0.25em;
+  margin-top: 1em;
+  background: #111111;
+  color: #ffffff;
+  padding: 0.5em;
+  border-bottom: 0.5em solid;
+  border-top: 0.5em solid;
+  border-color: #13ff13;
 }
-.banner .banner-header,
-.banner .banner-subtitle {
-  margin: 0 0.5em;
+.main {
+  margin-top: 1em;
 }
 .footer {
   margin-top: 1em;
   padding: 1em 0;
   text-align: center;
   clear: both;
-  background-color: #696969;
-  color: #111111;
+  background-color: #111111;
+  color: #ffffff;
+  border-top: 0.5em solid #13ff13;
 }
 .soundboard {
   padding: 0 0.5em;
