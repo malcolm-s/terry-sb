@@ -13,6 +13,14 @@ var replaceDictionary = [
 		value: "don't"
 	},
 	{
+		key: "cant",
+		value: "can't"
+	},
+	{
+		key: "Dont",
+		value: "Don't"
+	},
+	{
 		key: /-/g,
 		value: " "
 	},
@@ -29,7 +37,7 @@ var replaceDictionary = [
 	});
 });
 
-function  toAudioInfo (fileName) {
+function toAudioInfo (fileName) {
 	var name = fileName;
 
 	replaceDictionary.forEach(function(kv) {
