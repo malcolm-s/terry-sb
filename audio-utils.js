@@ -1,26 +1,65 @@
 var fs = require("fs");
 
-var audioPath = __dirname + "/public/audio";
-var dataPath = __dirname + "/data/audio-data.json";
+var AUDIO_PATH = __dirname + "/public/audio";
+var DATA_PATH = __dirname + "/data/audio-data.json";
 
-exports.generate = function () {
-	function transform (file) {
-		var name = file
-			.replace(/-/g, " ")
-			.replace(".mp3", "");
-
-		return {
-			src: file,
-			text: name
-		};
+var replaceDictionary = [
+	{
+		key: "youve",
+		value: "you've"
+	},
+	{
+		key: "dont",
+		value: "don't"
+	},
+	{
+		key: /-/g,
+		value: " "
+	},
+	{
+		key: ".mp3",
+		value: ""
 	}
+];
 
-	var audioFiles = fs.readdirSync(audioPath);
-	var data = audioFiles.map(transform);
+[1,2,3,4,5,6,7,8,9].forEach(function(i) {
+	replaceDictionary.push({
+		key: i.toString(), 
+	 	value: "#" + i 
+	});
+});
 
-	fs.writeFileSync(dataPath, JSON.stringify(data, null, 4));
+function  toAudioInfo (fileName) {
+	var name = fileName;
+
+	replaceDictionary.forEach(function(kv) {
+		name = name.replace(kv.key, kv.value);
+	});
+
+	return {
+		src: fileName,
+		text: name
+	};
 }
 
-exports.read = function () {
-	return JSON.parse(fs.readFileSync(dataPath, "utf8"));
+function getData() {
+	return fs.readdirSync(AUDIO_PATH)
+		.map(toAudioInfo);
+}
+
+function write () {
+	fs.writeFileSync(
+		DATA_PATH,
+		JSON.stringify(getData()));
+}
+
+function read() {
+	return JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+}
+
+module.exports = {
+	toAudioInfo: toAudioInfo,
+	getData: getData,
+	write: write,
+	read: read
 }

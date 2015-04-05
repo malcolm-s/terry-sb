@@ -24,7 +24,7 @@
     "watch": "^0.14.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test/*.js",
     "build:js": ".\\node_modules\\.bin\\browserify src/main.js > public/js/bundle.js",
     "watch:js": "watch 'npm run build:js' src/",
     "build:css": ".\\node_modules\\.bin\\lessc styles/styles.less public/css/styles.css",
