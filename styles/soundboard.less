@@ -1,27 +1,24 @@
 .soundboard {
-	padding: 0 0.5em;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .soundboard-item {
 	width: 50%;
-	padding: 0.25em;
+	padding: 0.5em;
 	text-align: center;
-
+	align-self: center;
 
 	.responsive(@bp-small, {
 		width: 33%;
-		padding: 0.5em;
 	});
 
-	.responsive(@bp-large, {
+	.responsive(@bp-med, {
+		width: 25%;
 	});
 
 	&:hover {
-		text-decoration: underline;
 		cursor: pointer;
-		//color: @canavansGreen;
-		//background-color: @contrastBackgroundColour;
+		text-decoration: underline;
 	}
 }

@@ -9,4 +9,4 @@ block header
 block main
 	.soundboard
 		each item in soundboardItems
-			.soundboard-item(data-id="#{item.src}", data-src="audio/#{item.src}")= item.text
+			a.soundboard-item(data-id="#{item.src}", data-src="audio/#{item.src}")= item.text

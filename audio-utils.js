@@ -1,7 +1,6 @@
 var fs = require("fs");
 
 var AUDIO_PATH = __dirname + "/public/audio";
-var DATA_PATH = __dirname + "/data/audio-data.json";
 
 var replaceDictionary = [
 	{
@@ -55,19 +54,7 @@ function getData() {
 		.map(toAudioInfo);
 }
 
-function write () {
-	fs.writeFileSync(
-		DATA_PATH,
-		JSON.stringify(getData()));
-}
-
-function read() {
-	return JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
-}
-
 module.exports = {
 	toAudioInfo: toAudioInfo,
 	getData: getData,
-	write: write,
-	read: read
 }
