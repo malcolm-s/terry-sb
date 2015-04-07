@@ -1,13 +1,15 @@
+@import "lib.less";
+
 .soundboard {
-	display: flex;
-	flex-wrap: wrap;
+	.display-flex();
+	.flex-wrap(wrap);
 }
 
 .soundboard-item {
 	width: 50%;
 	padding: 0.5em;
 	text-align: center;
-	align-self: center;
+	.align-self(center);
 
 	.responsive(@bp-small, {
 		width: 33%;

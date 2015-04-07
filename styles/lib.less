@@ -20,3 +20,48 @@
 		@content();
 	}
 }
+
+.display-flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex(@n) {
+    /*! Order matters here, as newer specifications need to override older ones */
+  -webkit-box-flex: @n;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: @n;         /* OLD - Firefox 19- */
+  //width: 20%;               /* For old syntax, otherwise collapses. */
+  -webkit-flex: @n;          /* Chrome */
+  -ms-flex: @n;              /* IE 10 */
+  flex: @n;
+}
+
+.flex-direction(@direction) {
+    -webkit-flex-direction: @direction;
+    -ms-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+.flex-wrap(@wrap) {
+    -ms-flex-wrap: @wrap;
+    -webkit-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+}
+
+.justify-content(@placement) {
+    -webkit-justify-content: @placement;
+    justify-content: @placement;
+}
+
+.align-items(@placement) {
+    -webkit-align-items: @placement;
+    align-items: @placement;
+}
+
+.align-self(@placement) {
+	-webkit-align-self: @placement;
+	align-self: @placement;
+}

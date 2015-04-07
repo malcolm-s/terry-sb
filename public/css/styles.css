@@ -43,13 +43,20 @@ h1 {
   border-top: 0.5em solid #13ff13;
 }
 .soundboard {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .soundboard-item {
   width: 50%;
   padding: 0.5em;
   text-align: center;
+  -webkit-align-self: center;
   align-self: center;
 }
 @media screen and (min-width: 24em) {
