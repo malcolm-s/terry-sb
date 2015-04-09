@@ -1,7 +1,3 @@
-var fs = require("fs");
-
-var AUDIO_PATH = __dirname + "/public/audio";
-
 var replaceDictionary = [
 	{
 		key: "youve",
@@ -31,8 +27,8 @@ var replaceDictionary = [
 
 [1,2,3,4,5,6,7,8,9].forEach(function(i) {
 	replaceDictionary.push({
-		key: i.toString(), 
-	 	value: "#" + i 
+		key: i.toString(),
+	 	value: "#" + i
 	});
 });
 
@@ -49,12 +45,6 @@ function toAudioInfo (fileName) {
 	};
 }
 
-function getData() {
-	return fs.readdirSync(AUDIO_PATH)
-		.map(toAudioInfo);
-}
+module.exports = function parse(name) {
 
-module.exports = {
-	toAudioInfo: toAudioInfo,
-	getData: getData,
 }
