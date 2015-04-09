@@ -32,19 +32,10 @@ var replaceDictionary = [
 	});
 });
 
-function toAudioInfo (fileName) {
-	var name = fileName;
-
+module.exports = function parse(name) {
 	replaceDictionary.forEach(function(kv) {
 		name = name.replace(kv.key, kv.value);
 	});
 
-	return {
-		src: fileName,
-		text: name
-	};
-}
-
-module.exports = function parse(name) {
-
+	return name;
 }
