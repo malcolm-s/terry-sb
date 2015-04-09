@@ -4,8 +4,11 @@ var parse = require("../src/name-parser");
 describe('name-parser', function() {
 
 	describe('parse', function() {
-		it('should remove .mp3', function() {
+		it("should capitalise every letter", function () {
+			assert.equal(parse("test-me-please"), "Test Me Please");
+		});
 
+		it('should remove .mp3', function() {
 			assert.equal(parse("test.mp3"), "test");
 		});
 
@@ -27,6 +30,10 @@ describe('name-parser', function() {
 
 		it('should handle capitalisations', function() {
 			assert.equal(parse("Dont"), "Don't")
+		});
+
+		it('should handle capitalisations', function() {
+			assert.equal(parse("Cant"), "Can't")
 		});
 	});
 });

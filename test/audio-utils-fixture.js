@@ -15,14 +15,13 @@ describe('audio-utils', function() {
 	describe('getData', function() {
 
 		it('should return array of audio info', function() {
-			// help, run stuff with relative paths??!?!?
+			var data =  au.getData();
+			assert(data instanceof Array);
+			assert(data.length > 0);
 
-			//var data =  au.getData();
-			//assert(data instanceof Array);
-			//assert(data.length > 0);
-			//var info = data[0];
-			//assert(info.text);
-			//assert(info.src);
+			var info = data[0];
+			assert(info.text);
+			assert(info.src);
 		});
 	});
 });

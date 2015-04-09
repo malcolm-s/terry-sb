@@ -12,6 +12,10 @@ var replaceDictionary = [
 		value: "can't"
 	},
 	{
+		key: "Cant",
+		value: "Can't"
+	},
+	{
 		key: "Dont",
 		value: "Don't"
 	},

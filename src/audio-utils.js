@@ -2,7 +2,7 @@ var fs = require("fs");
 var path = require("path");
 var parse = require("./name-parser");
 
-var AUDIO_PATH = path.resolve("public/audio", "../");
+var AUDIO_PATH = path.join(__dirname, '../') + "public/audio";
 
 function toAudioInfo (fileName) {
 	return {
