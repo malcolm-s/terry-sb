@@ -18,10 +18,13 @@ describe('name-parser', function() {
 			assert.equal(parse("cant"), "Can't");
 			assert.equal(parse("im"), "I'm");
 			assert.equal(parse("ive"), "I've");
+			assert.equal(parse("havent"), "Haven't");
 		});
 
-		it('should change 1 to #1', function() {
-			assert.equal(parse("test-1.mp3"), "Test #1");
+		it('should change prefix numbers with hash', function() {
+			for (var i = 1; i < 11; i++) {
+				assert.equal(parse("test-" + i + ".mp3"), "Test #" + i);
+			}
 		});
 	});
 });

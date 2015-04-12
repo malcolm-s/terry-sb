@@ -7,12 +7,14 @@
 @fontSizeBase: 20px;
 @fontSizeH1: 2rem;
 // colours
-@contrastBackgroundColour: #111111;
-@backgroundColour: #ffffff;
-@fontColour: #111111;
-@contrastFontColour: #ffffff;
+@black: #111111;
+@white: #ffffff;
 @canavansGreen: rgb(19, 255, 19);
-
+// element colours
+@backgroundColour: @black;
+@contrastBackgroundColour: @white;
+@fontColour: @white;
+@contrastFontColour: @black;
 
 // mixins
 .responsive(@minWidth, @content) {

@@ -1,6 +1,6 @@
 var express	= require("express");
 var path	= require("path");
-var data 	= require("src/audio-utils").getData();
+var data 	= require("./src/audio-utils").getData();
 var app 	= express();
 
 // app environment

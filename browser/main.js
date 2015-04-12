@@ -12,11 +12,11 @@ function main () {
 	// bind click to play sounds
 	bindSoundboardItemClicks();
 
-	
+
 };
 
 function preloadSoundboardSounds () {
-	$('.soundboard-item').each(function () {
+	$('.soundboard-item a').each(function () {
 		var sound = {
 			id: $(this).attr("data-id"),
 			src: $(this).attr("data-src")
@@ -27,7 +27,7 @@ function preloadSoundboardSounds () {
 }
 
 function bindSoundboardItemClicks () {
-	$(".soundboard-item").click(function (event) {
+	$(".soundboard-item a").click(function (event) {
 		var item = $(this);
 
 		createjs.Sound.play(item.attr("data-id"));
