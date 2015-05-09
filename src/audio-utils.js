@@ -4,19 +4,14 @@ var parse = require("./name-parser");
 
 var AUDIO_PATH = path.join(__dirname, '../') + "public/audio";
 
-function toAudioInfo (fileName) {
+module.exports.toAudioInfo = function (fileName) {
 	return {
 		src: fileName,
 		text: parse(fileName)
 	};
 }
 
-function getData() {
+module.exports.getData = function() {
 	return fs.readdirSync(AUDIO_PATH)
-		.map(toAudioInfo);
-}
-
-module.exports = {
-	toAudioInfo: toAudioInfo,
-	getData: getData,
+		.map(module.exports.toAudioInfo);
 }
