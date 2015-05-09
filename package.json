@@ -25,8 +25,7 @@
     "watch": "^0.14.0"
   },
   "scripts": {
-    "test": "mocha test/*.js",
-    "watch:test": "watch 'mocha test/*.js'",
+    "test": "mocha test/*.js src/*.js -w",
     "build:js": ".\\node_modules\\.bin\\browserify browser/main.js > public/js/bundle.js",
     "watch:js": "watch 'npm run build:js' browser/",
     "build:css": ".\\node_modules\\.bin\\lessc styles/styles.less public/css/styles.css",
