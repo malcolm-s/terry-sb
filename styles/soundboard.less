@@ -1,15 +1,23 @@
 @import "lib.less";
 
 .soundboard {
-	.display-flex();
-	.flex-wrap(wrap);
+	section {
+		width: 100%;
+		.display-flex();
+		.flex-wrap(wrap);
+
+		&.epilogue {
+			margin-top: 1em;
+			border-top: 1em solid @canavansGreen;
+			padding-top: 1em;
+		}
+	}
 }
 
 .soundboard-item {
 	width: 50%;
-	padding: 0.5em;
-	text-align: center;
 	.align-self(center);
+	padding: 0.5em;
 
 	.responsive(@bp-small, {
 		width: 33%;
@@ -19,9 +27,22 @@
 		width: 25%;
 	});
 
+	a {
+		display: block;
+		text-align: center;
+		background-color: @contrastBackgroundColour;
+		color: @contrastFontColour;
+		border-radius: 1em;
+		padding: 0.5em;
+
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+			color: @canavansGreen;
+		}
+	}
+
 	&:hover {
-		cursor: pointer;
-		text-decoration: underline;
-		color: @canavansGreen;
+
 	}
 }

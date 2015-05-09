@@ -1,7 +1,9 @@
 var express	= require("express");
-var path	= require("path");
-var data 	= require("./src/audio-utils").getData();
+var path = require("path");
+var db = require("./src/db");
+
 var app 	= express();
+var data = db.load();
 
 // app environment
 var isDev = process.env.NODE_ENV === "dev";
@@ -21,7 +23,7 @@ app.get("/", function (req, res) {
 
 app.get("/bollocks", function (req, res) {
 	res.render("index", {
-		soundboardItems: data,
+		soundboard: data.soundboard,
 		isDev: isDev
 	});
 });

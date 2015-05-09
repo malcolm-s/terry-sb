@@ -1,0 +1,9 @@
+include ./item.jade
+
+.soundboard
+  section.items
+    each item in soundboard.items
+      +soundboard-item(item)
+  section.epilogue    
+    each item in soundboard.epilogue
+      +soundboard-item(item)

@@ -1,5 +1,6 @@
 extends ./layout.jade
 
+
 block header
 	img.banner-image(src="/images/header1.png")
 	.banner-header
@@ -7,7 +8,4 @@ block header
 		p.banner-header-subtitle Terry Council Bollocks: the phrase machine.
 
 block main
-	.soundboard
-		each item in soundboardItems
-			.soundboard-item
-				a(data-id="#{item.src}", data-src="audio/#{item.src}")= item.text
+	include ./soundboard/soundboard.jade				
