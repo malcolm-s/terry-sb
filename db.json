@@ -97,11 +97,7 @@
       },
       {
           "src": "I-havent-got-a-heart-swinging-brick-pendulum.mp3",
-          "text": "I Haven't Got A Heart Swinging Brick Pendulum"
-      },
-      {
-          "src": "I-havent-got-a-heart-swinging-brick.mp3",
-          "text": "I Haven't Got A Heart Swinging Brick"
+          "text": "I Haven't Got A Heart"
       },
       {
           "src": "If-i-had-a--brain.mp3",
@@ -109,7 +105,7 @@
       },
       {
           "src": "Im Not Bloody Miserable.mp3",
-          "text": "I'm not bloody miserable"
+          "text": "I'm Not Bloody Miserable"
       },
       {
           "src": "Im-Never-Miserable.mp3",
@@ -117,7 +113,7 @@
       },
       {
           "src": "Ive-Got-To-Be-At-Work-At-7.mp3",
-          "text": "I've Got To Be At Work At #7"
+          "text": "I've Got To Be At Work At 7"
       },
       {
           "src": "Ive-Seen-More-Life-In-A-Tin-Of-Andrews.mp3",
@@ -125,7 +121,7 @@
       },
       {
           "src": "Jaeger-Bomb-1.mp3",
-          "text": "Jaeger Bomb #1"
+          "text": "Jaeger Bomb"
       },
       {
           "src": "Lazy-Bastards.mp3",
@@ -176,10 +172,6 @@
           "text": "Love You!"
       },
       {
-          "src": "No-i-havent-got-a-heart.mp3",
-          "text": "No I Haven't Got A Heart"
-      },
-      {
           "src": "Oh-My-God-1.mp3",
           "text": "Oh My God #1"
       },
@@ -213,7 +205,7 @@
       },
       {
           "src": "On-The-Grounds-Of-Diminished-Responsibility.mp3",
-          "text": "On The Grounds Of Diminished Responsibility"
+          "text": "Diminished Responsibility"
       },
       {
           "src": "Round-2.mp3",
@@ -221,19 +213,15 @@
       },
       {
           "src": "Terrys-a-darling.mp3",
-          "text": "Terrys A Darling"
+          "text": "Terry's A Darling"
       },
       {
           "src": "Thankyou-and-goodnight.mp3",
-          "text": "Thankyou And Goodnight"
-      },
-      {
-          "src": "The-Bellamy-Brothers.mp3",
-          "text": "The Bellamy Brothers"
+          "text": "Thank you And Goodnight"
       },
       {
           "src": "Theres-Only-One-God-In-Peckham.mp3",
-          "text": "Theres Only One God In Peckham"
+          "text": "There's Only One God In Peckham"
       },
       {
           "src": "Time-For-Uncle-Terry-To-Go-Home.mp3",
@@ -253,7 +241,7 @@
       },
       {
           "src": "Whores-Knickers.mp3",
-          "text": "Whores Knickers"
+          "text": "Whore's Knickers"
       },
       {
           "src": "Yaman!-1.mp3",
@@ -269,15 +257,11 @@
       },
       {
           "src": "Yello!-1.mp3",
-          "text": "Yello! #1"
+          "text": "Yello!"
       },
       {
           "src": "You-Tart-2.mp3",
-          "text": "You Tart #2"
-      },
-      {
-          "src": "You-tart.mp3",
-          "text": "You Tart"
+          "text": "You Tart!"
       },
       {
           "src": "a-keg-of-fosters.mp3",
@@ -286,14 +270,6 @@
       {
           "src": "all-you-drink-is.mp3",
           "text": "All You Drink Is"
-      },
-      {
-          "src": "cigarrette-another-nail-in-my-coffin-and-then.mp3",
-          "text": "Cigarrette Another Nail In My Coffin And Then"
-      },
-      {
-          "src": "cigarrette-another-nail-in-my-coffin.mp3",
-          "text": "Cigarrette Another Nail In My Coffin"
       },
       {
           "src": "frying-tonight!.mp3",
@@ -308,40 +284,24 @@
           "text": "Helloooo"
       },
       {
-          "src": "helloooo2.mp3",
-          "text": "Helloooo2"
-      },
-      {
           "src": "how are you this evening.mp3",
-          "text": "How are you this evening"
+          "text": "How Are You This Evening?"
       },
       {
           "src": "how are you young lady.mp3",
-          "text": "How are you young lady"
+          "text": "How Are You Young Lady"
       },
       {
           "src": "i-said-brick-not-prick.mp3",
           "text": "I Said Brick Not Prick"
       },
       {
-          "src": "im-never-miserable.mp3",
-          "text": "I'm Never Miserable"
-      },
-      {
           "src": "im-only-here-for-the-fosters-and-karaoke.mp3",
           "text": "I'm Only Here For The Fosters And Karaoke"
       },
       {
-          "src": "im-only-here-for-the-fosters.mp3",
-          "text": "I'm Only Here For The Fosters"
-      },
-      {
           "src": "ive-got-more-brains-proves.mp3",
-          "text": "I've Got More Brains Proves"
-      },
-      {
-          "src": "ive-got-more-brains.mp3",
-          "text": "I've Got More Brains"
+          "text": "Southwark Council"
       },
       {
           "src": "no-2.mp3",
@@ -349,15 +309,11 @@
       },
       {
           "src": "no.mp3",
-          "text": "No"
+          "text": "No #1"
       },
       {
           "src": "proper-little-madam.mp3",
           "text": "Proper Little Madam"
-      },
-      {
-          "src": "so-then-you-can-leave-it.mp3",
-          "text": "So Then You Can Leave It"
       },
       {
           "src": "so-then-you-can.mp3",
@@ -365,7 +321,7 @@
       },
       {
           "src": "thats-it.mp3",
-          "text": "Thats It"
+          "text": "That's It"
       },
       {
           "src": "tribute.mp3",
@@ -373,15 +329,11 @@
       },
       {
           "src": "until-she-found-out...hello!.mp3",
-          "text": "Until She Found Out...hello!"
-      },
-      {
-          "src": "until-she-found-out.mp3",
-          "text": "Until She Found Out"
+          "text": "Until She Found Out... Hello!"
       },
       {
           "src": "you-couldnt-manage-it.mp3",
-          "text": "You Couldnt Manage It"
+          "text": "You Couldn't Manage It"
       }
     ]
   }
