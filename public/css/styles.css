@@ -58,6 +58,8 @@ h1 {
   margin-top: 1em;
   border-top: 1em solid #13ff13;
   padding-top: 1em;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .soundboard-item {
   width: 50%;
